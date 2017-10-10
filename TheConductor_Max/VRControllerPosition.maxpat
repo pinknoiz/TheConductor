@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2078.0, 313.0, 1212.0, 683.0 ],
+		"rect" : [ 434.0, 313.0, 1212.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,20 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-3",
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 239.0, 249.0, 150.0, 34.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.917763, 0.295848, 0.233668, 0.290933 ],
 					"fontname" : "Ailerons",
@@ -2493,8 +2507,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -2915,8 +2929,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5104,8 +5118,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -5526,8 +5540,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7715,8 +7729,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -8137,8 +8151,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -8209,7 +8223,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 0,
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
+					"order" : 1,
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -8281,21 +8304,21 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-17" : [ "live.dial", "X", 0 ],
-			"obj-15::obj-32::obj-15" : [ "Unmap[2]", "unmap", 0 ],
-			"obj-12::obj-32::obj-15" : [ "Unmap[1]", "unmap", 0 ],
-			"obj-15::obj-32::obj-19" : [ "Map[2]", "Map", 0 ],
-			"obj-14::obj-32::obj-19" : [ "Map[6]", "Map", 0 ],
 			"obj-14::obj-32::obj-15" : [ "Unmap[7]", "unmap", 0 ],
-			"obj-12::obj-32::obj-19" : [ "Map[1]", "Map", 0 ],
 			"obj-10" : [ "live.dial[1]", "Y", 0 ],
-			"obj-13" : [ "live.dial[2]", "Z", 0 ]
+			"obj-13" : [ "live.dial[2]", "Z", 0 ],
+			"obj-17" : [ "live.dial", "X", 0 ],
+			"obj-14::obj-32::obj-19" : [ "Map[6]", "Map", 0 ],
+			"obj-15::obj-32::obj-15" : [ "Unmap[2]", "unmap", 0 ],
+			"obj-15::obj-32::obj-19" : [ "Map[2]", "Map", 0 ],
+			"obj-12::obj-32::obj-15" : [ "Unmap[1]", "unmap", 0 ],
+			"obj-12::obj-32::obj-19" : [ "Map[1]", "Map", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "M4L.IO.Remote2.maxpat",
 				"bootpath" : "~/Library/Mobile Documents/com~apple~CloudDocs/UnityOSC",
-				"patcherrelativepath" : "../Library/Mobile Documents/com~apple~CloudDocs/UnityOSC",
+				"patcherrelativepath" : "../../Library/Mobile Documents/com~apple~CloudDocs/UnityOSC",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -8305,6 +8328,10 @@
 			}
 , 			{
 				"name" : "o.compose.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
  ],
@@ -8348,8 +8375,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

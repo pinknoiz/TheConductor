@@ -1,13 +1,12 @@
 The Conductor 
 ========================
 
-Toolset comprised of Unity project assets and Max patches for creating musical mixed reality software.
+Toolset for making musical applications with Unity and Max.
 
 ## Goals
 - Create examples for interacting with music and spatial environments.
 - Explore patterns and initiate discussion for creating new kinds of musical interactions.
 - Provide environments and tools for others to become interested in music creation.
-- Foundation template for starting musical mixed reality applications.
 
 ## Components
 OSC Address Router, Stepper, Slider, Dial, Position, Waves, Pads, Keys + more.
@@ -38,7 +37,7 @@ You should already have Ableton and Max installed. All other dependencies are fr
 
 4. Run the scene. If you have errors, they will be shown in the Unity console. 
 
-5. Open Ableton and add the folder `TC_Max` from this project to your Ableton places in the sidebar. 
+5. Open Ableton and add the folder `TheConductor_Max` from this project to your Ableton places in the sidebar. 
 
 6. OSC defaults to running on port 9000 in Unity. You can change the ports and outgoing IP address on the `[OSC]` component in Unity and in each M4L patch.
 
