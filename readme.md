@@ -1,7 +1,7 @@
 The Conductor 
 ========================
 
-Toolset for making musical applications with Unity and Max.
+Toolset for making musical applications with Unity, Max and Ableton.
 
 ## Goals
 - Create examples for interacting with music and spatial environments.
